@@ -24,53 +24,49 @@ void led_set(uint8_t usb_led)
 {
     if (usb_led & (1<<USB_LED_CAPS_LOCK)) {
         // Output high
-        DDRD |= (1<<1);
-        PORTD |= (1<<1);
-	DDRD |= (1<<5);
-        PORTD |= (1<<5);
+        DDRB |= (1<<0);
+        PORTB |= (1<<0);
     } else {
         // output low
-        DDRD &= ~(1<<1);
-        PORTD &= ~(1<<1);
-        DDRD &= ~(1<<5);
-        PORTD &= ~(1<<5);
+        DDRB &= ~(1<<0);
+        PORTB &= ~(1<<0);
     }
       
     if (usb_led & (1<<USB_LED_SCROLL_LOCK))
     {
         // Output high.
-        DDRD |= (1<<7);
-        PORTD |= (1<<7);
+        DDRB |= (1<<1);
+        PORTB |= (1<<1);
     }
     else
     {
         // Output low.
-        DDRD &= ~(1<<7);
-        PORTD &= ~(1<<7);
+        DDRB &= ~(1<<1);
+        PORTB &= ~(1<<1);
     }
 
     if (usb_led & (1<<USB_LED_NUM_LOCK))
     {
         // Output high.
-        DDRD |= (1<<3);
-        PORTD |= (1<<3);
+        DDRC |= (1<<0);
+        PORTC |= (1<<0);
     }
     else
     {
         // Output low.
-        DDRD &= ~(1<<3);
-        PORTD &= ~(1<<3);
+        DDRC &= ~(1<<0);
+        PORTC &= ~(1<<0);
     }
 
 }
 
 void led_layer_set(uint32_t state) {
-    DDRD |= (1<<4);
+    DDRC |= (1<<1);
 
     /* Led for Layer 1 */
     if ((1<<1 & state) != 0) {
-        PORTD |= (1<<4);
+        PORTC |= (1<<1);
     } else {
-        PORTD &= ~(1<<4);
+        PORTC &= ~(1<<1);
     }
 }
