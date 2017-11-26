@@ -39,7 +39,7 @@
 #----------------------------------------------------------------------------
 
 # Target file name (without extension).
-TARGET = maltron_lufa
+TARGET = dactyl_lufa
 
 # Directory common source filess exist
 TMK_DIR = ../../tmk_core
@@ -50,12 +50,11 @@ TARGET_DIR = .
 # project specific files
 SRC =	keymap_common.c \
 	matrix.c \
-	led.c
-
+	
 ifdef KEYMAP
     SRC := keymap_$(KEYMAP).c $(SRC)
 else
-    SRC := keymap_maltron.c $(SRC)
+    SRC := keymap_dactyl.c $(SRC)
 endif
 
 CONFIG_H = config.h
