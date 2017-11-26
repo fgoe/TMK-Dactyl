@@ -11,12 +11,11 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         
     /* 1: media keys */
     KEYMAP(
-        TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,                              TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS, \
-        TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,                              TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS, \
-        TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS   TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS, \
-        TRNS,  FN10,  FN11,  FN12,  FN13,  NONUS_HASH,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,       FN15,FN16,FN17,FN18,FN19,TRNS,     \
-        TRNS,  FN22,   GRV,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  KP_ASTERISK,  TRNS,  TRNS,  TRNS,  FN23),
-        
+        TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,                                   TRNS,  TRNS,        TRNS,  TRNS,  TRNS,  TRNS, \
+        TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,                                   TRNS,  TRNS,        TRNS,  TRNS,  TRNS,  TRNS, \
+        TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,      TRNS,  TRNS,  TRNS,  TRNS,   TRNS,  TRNS,        TRNS,  TRNS,  TRNS,  TRNS, \
+        TRNS,  FN10,  FN11,  FN12,  FN13,  NONUS_HASH,TRNS,                TRNS,   TRNS,  TRNS,        TRNS,  TRNS,  FN15,  FN16, \
+        TRNS,  FN22,   GRV,  TRNS,  TRNS,  TRNS,      TRNS,  TRNS,  TRNS,  TRNS,   TRNS,  KP_ASTERISK, TRNS,  TRNS,  TRNS,  TRNS ),      
 };
 const uint16_t PROGMEM fn_actions[] = {
     /* QWERTZ Layout */
