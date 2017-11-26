@@ -24,12 +24,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID      0x6060
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    GoFlo
-#define PRODUCT         Maltron
-#define DESCRIPTION     t.m.k. keyboard firmware for Maltron 3D
+#define PRODUCT         Dactyl
+#define DESCRIPTION     t.m.k. keyboard firmware for Dactyl Keyboard
 
 /* key matrix size */
-#define MATRIX_ROWS 7
-#define MATRIX_COLS 19
+#define MATRIX_ROWS 5
+#define MATRIX_COLS 16
 
 /* define if matrix has ghost */
 //#define MATRIX_HAS_GHOST
