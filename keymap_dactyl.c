@@ -3,19 +3,19 @@
 const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* 0: qwerty */
     KEYMAP(
-          1,     1,    2,   3,   4,   5,                         6,   7,    8,    9,    0, MINS,  \
-         TAB,    Q,    W,   E,   R,   T,                         Y,   U,    I,    O,    P, LBRC,  \
-        LCTL,    A,    S,   D,   F,   G,   1,   2,    2,   1,    H,   J,    K,    L, SCLN, QUOT,  \
-        LSFT,    Z,    X,   C,   V,   B,     LALT, RALT,         N,   M, COMM,  DOT, SLSH, RSFT,  \
-        NUBS,    1, LEFT,RGHT, FN0,BSPC, DEL,LCTL, RCTL, ENT,  SPC, FN0,   UP, DOWN, FN14, 2      ),
+         ESC,    1,    2,   3,   4,   5,                          6,   7,    8,    9,    0, MINS,  \
+         TAB,    Q,    W,   E,   R,   T,                          Y,   U,    I,    O,    P, LBRC,  \
+        LCTL,    A,    S,   D,   F,   G, END,HOME, PGUP, PGDN,    H,   J,    K,    L, SCLN, QUOT,  \
+        LSFT,    Z,    X,   C,   V,   B,     LALT, RALT,          N,   M, COMM,  DOT, SLSH, RSFT,  \
+        NUBS, FN14, LEFT,RGHT, FN0,BSPC, DEL,LCTL, RCTL,  ENT,  SPC, FN0,   UP, DOWN, FN23, KP_PLUS ), 
         
     /* 1: media keys */
     KEYMAP(
-        TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,                                   TRNS,  TRNS,        TRNS,  TRNS,  TRNS,  TRNS, \
-        TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,                                   TRNS,  TRNS,        TRNS,  TRNS,  TRNS,  TRNS, \
-        TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,      TRNS,  TRNS,  TRNS,  TRNS,   TRNS,  TRNS,        TRNS,  TRNS,  TRNS,  TRNS, \
-        TRNS,  FN10,  FN11,  FN12,  FN13,  NONUS_HASH,TRNS,                TRNS,   TRNS,  TRNS,        TRNS,  TRNS,  FN15,  FN16, \
-        TRNS,  FN22,   GRV,  TRNS,  TRNS,  TRNS,      TRNS,  TRNS,  TRNS,  TRNS,   TRNS,  KP_ASTERISK, TRNS,  TRNS,  TRNS,  TRNS ),      
+         F12,    F1,    F2,    F3,    F4,    F5,                                                  F6,          F7,          F8,    F9,   F10,   F11, \
+        TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,                                                TRNS,        TRNS,        TRNS,  TRNS,  TRNS,  TRNS, \
+        TRNS,  FN10,  FN11,  FN12,  FN13,  NONUS_HASH,     TRNS,  TRNS,  TRNS,  TRNS,           FN15,        FN16,        FN17,  FN18,  FN18,  TRNS, \
+        FN22,  TRNS,  TRNS,  TRNS,  TRNS,  INS,                   TRNS,  TRNS,                  KP_ASTERISK, TRNS,        TRNS,  TRNS,  FN15,  FN16, \
+        FN20,  TRNS,  TRNS,  TRNS,  TRNS,            TRNS, TRNS,  TRNS,  TRNS,  TRNS,  TRNS,                 TRNS,        TRNS,  TRNS,  TRNS,  KP_ASTERISK ),      
 };
 const uint16_t PROGMEM fn_actions[] = {
     /* QWERTZ Layout */
