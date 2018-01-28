@@ -12,7 +12,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* 1: media keys */
     KEYMAP(
          F12,    F1,    F2,    F3,    F4,    F5,                                                  F6,          F7,          F8,    F9,   F10,   F11, \
-        TRNS,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS,                                                TRNS,        TRNS,        TRNS,  TRNS,  TRNS,  TRNS, \
+        GRV,   TRNS,  TRNS,  TRNS,  TRNS,  TRNS,                                                TRNS,        TRNS,        TRNS,  TRNS,  TRNS,  TRNS, \
         TRNS,  FN10,  FN11,  FN12,  FN13,  NONUS_HASH,     TRNS,  TRNS,  TRNS,  TRNS,           FN15,        FN16,        FN17,  FN18,  FN18,  TRNS, \
         FN22,  TRNS,  TRNS,  TRNS,  TRNS,  INS,                   TRNS,  TRNS,                  KP_ASTERISK, TRNS,        TRNS,  TRNS,  FN15,  FN16, \
         FN20,  TRNS,  TRNS,  TRNS,  TRNS,            TRNS, TRNS,  TRNS,  TRNS,  TRNS,  TRNS,                 TRNS,        TRNS,  TRNS,  TRNS,  KP_ASTERISK ),      
@@ -35,3 +35,4 @@ const uint16_t PROGMEM fn_actions[] = {
     [22]  =  ACTION_MODS_KEY(MOD_LSFT,          KC_NUHS),    // FN22  = RAlt+ = '
     [23]  =  ACTION_MODS_KEY(MOD_RALT,          KC_RBRC),    // FN23  = RAlt+ = ~
 };
+
